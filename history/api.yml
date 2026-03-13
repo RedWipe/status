@@ -1,7 +1,7 @@
 url: https://api.redwipe.com/healthz
-status: down
-code: 0
-responseTime: 0
-lastUpdated: 2026-03-13T19:46:41.844Z
+status: up
+code: 200
+responseTime: 84
+lastUpdated: 2026-03-13T22:30:51.204Z
 startTime: 2026-03-13T19:46:41.636Z
 generator: Upptime <https://github.com/upptime/upptime>
