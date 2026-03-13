@@ -43,11 +43,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/api.redwipe.com.ico",
     "slug": "api",
     "status": "down",
-    "uptime": "8.73%",
-    "uptimeDay": "8.73%",
-    "uptimeWeek": "8.73%",
-    "uptimeMonth": "8.73%",
-    "uptimeYear": "8.73%",
+    "uptime": "4.11%",
+    "uptimeDay": "4.11%",
+    "uptimeWeek": "4.11%",
+    "uptimeMonth": "4.11%",
+    "uptimeYear": "4.11%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
@@ -63,16 +63,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/docs.redwipe.com.ico",
     "slug": "docs",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "uptime": "8.79%",
+    "uptimeDay": "8.79%",
+    "uptimeWeek": "8.79%",
+    "uptimeMonth": "8.79%",
+    "uptimeYear": "8.79%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-03-13": 0
+    }
   }
 ]
