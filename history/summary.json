@@ -34,7 +34,7 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-03-13": 0
+      "2026-03-13": 11
     }
   },
   {
@@ -43,18 +43,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/api.redwipe.com.ico",
     "slug": "api",
     "status": "down",
-    "uptime": "4.11%",
-    "uptimeDay": "4.11%",
-    "uptimeWeek": "4.11%",
-    "uptimeMonth": "4.11%",
-    "uptimeYear": "4.11%",
+    "uptime": "0.02%",
+    "uptimeDay": "0.02%",
+    "uptimeWeek": "0.02%",
+    "uptimeMonth": "0.02%",
+    "uptimeYear": "0.02%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-03-13": 0
+      "2026-03-13": 11
     }
   },
   {
@@ -62,19 +62,19 @@
     "url": "https://docs.redwipe.com",
     "icon": "https://icons.duckduckgo.com/ip3/docs.redwipe.com.ico",
     "slug": "docs",
-    "status": "down",
-    "uptime": "8.79%",
-    "uptimeDay": "8.79%",
-    "uptimeWeek": "8.79%",
-    "uptimeMonth": "8.79%",
-    "uptimeYear": "8.79%",
-    "time": 0,
-    "timeDay": 0,
-    "timeWeek": 0,
-    "timeMonth": 0,
-    "timeYear": 0,
+    "status": "up",
+    "uptime": "0.74%",
+    "uptimeDay": "0.74%",
+    "uptimeWeek": "0.74%",
+    "uptimeMonth": "0.74%",
+    "uptimeYear": "0.74%",
+    "time": 324,
+    "timeDay": 324,
+    "timeWeek": 324,
+    "timeMonth": 324,
+    "timeYear": 324,
     "dailyMinutesDown": {
-      "2026-03-13": 0
+      "2026-03-13": 11
     }
   }
 ]
