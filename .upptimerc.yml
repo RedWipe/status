@@ -51,6 +51,17 @@ status-website:
       --rw-cyan: #22D3EE;
     }
 
+    /* ---- Overflow fix ---- */
+    html, body {
+      overflow-x: hidden !important;
+      max-width: 100vw !important;
+    }
+
+    nav, .navbar, header {
+      max-width: 100vw !important;
+      box-sizing: border-box !important;
+    }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
       background-color: var(--rw-bg) !important;
