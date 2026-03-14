@@ -14,4 +14,234 @@ sites:
 status-website:
   cname: status.redwipe.com
   name: Redwipe Status
+  logoUrl: https://raw.githubusercontent.com/redwipe/status/master/assets/redwipe-logo-dark.png
+  favicon: https://raw.githubusercontent.com/redwipe/status/master/assets/favicon.png
   theme: dark
+  introTitle: "**Redwipe** System Status"
+  introMessage: "Real-time service health monitoring for [redwipe.com](https://redwipe.com). All times are in UTC. [Subscribe to updates](https://github.com/redwipe/status) for incident notifications."
+  navbar:
+    - title: Home
+      href: https://redwipe.com
+    - title: Dashboard
+      href: https://app.redwipe.com
+    - title: Docs
+      href: https://docs.redwipe.com
+    - title: GitHub
+      href: https://github.com/redwipe
+  css: |
+    /* ===== Redwipe Status Page — Brand Override ===== */
+
+    /* Font import — Geist Sans */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    /* ---- Base ---- */
+    :root {
+      --rw-bg: #141619;
+      --rw-surface: #1E2128;
+      --rw-surface-hover: #262A33;
+      --rw-border: #2E3340;
+      --rw-border-default: #3D4455;
+      --rw-text-primary: #F3F3F3;
+      --rw-text-secondary: #9CA3AF;
+      --rw-text-tertiary: #5A6275;
+      --rw-red: #FF5033;
+      --rw-green: #00D68F;
+      --rw-yellow: #F5A623;
+      --rw-indigo: #6366F1;
+      --rw-cyan: #22D3EE;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+      background-color: var(--rw-bg) !important;
+      color: var(--rw-text-primary) !important;
+    }
+
+    /* ---- Navbar ---- */
+    nav, .navbar, header {
+      background-color: rgba(20, 22, 25, 0.95) !important;
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+      border-bottom: 1px solid var(--rw-border) !important;
+    }
+
+    nav a, .navbar a, header a {
+      color: var(--rw-text-primary) !important;
+      font-weight: 500 !important;
+      transition: color 0.2s ease !important;
+    }
+
+    nav a:hover, .navbar a:hover, header a:hover {
+      color: var(--rw-text-secondary) !important;
+    }
+
+    /* Logo sizing */
+    nav img, .navbar img, header img {
+      height: 32px !important;
+      width: auto !important;
+    }
+
+    /* ---- Hero / Intro ---- */
+    .shc {
+      background-color: var(--rw-bg) !important;
+    }
+
+    h1, .intro-title {
+      color: var(--rw-text-primary) !important;
+      font-weight: 700 !important;
+      letter-spacing: -0.02em !important;
+    }
+
+    /* ---- Cards & Panels ---- */
+    .card, article, section > div, .monitors {
+      background-color: var(--rw-surface) !important;
+      border: 1px solid var(--rw-border) !important;
+      border-radius: 12px !important;
+      transition: border-color 0.2s ease !important;
+    }
+
+    .card:hover, article:hover {
+      border-color: var(--rw-border-default) !important;
+    }
+
+    /* ---- Status indicators ---- */
+    .up, .status-up, [class*="success"], .operational {
+      color: var(--rw-green) !important;
+    }
+
+    .down, .status-down, [class*="danger"], [class*="error"] {
+      color: var(--rw-red) !important;
+    }
+
+    .degraded, [class*="warning"], .partial {
+      color: var(--rw-yellow) !important;
+    }
+
+    /* Green bars for uptime */
+    .up-bg, [style*="background-color: rgb(46, 204, 113)"],
+    [style*="background: rgb(46, 204, 113)"] {
+      background-color: var(--rw-green) !important;
+    }
+
+    /* Red bars for downtime */
+    .down-bg, [style*="background-color: rgb(231, 76, 60)"],
+    [style*="background: rgb(231, 76, 60)"] {
+      background-color: var(--rw-red) !important;
+    }
+
+    /* ---- Progress / Uptime Bars ---- */
+    .bar, .uptime-bar, .graph-bar {
+      background-color: var(--rw-border) !important;
+      border-radius: 4px !important;
+      overflow: hidden !important;
+    }
+
+    /* ---- Tables ---- */
+    table {
+      border-collapse: separate !important;
+      border-spacing: 0 !important;
+    }
+
+    th {
+      background-color: var(--rw-surface) !important;
+      color: var(--rw-text-secondary) !important;
+      font-weight: 600 !important;
+      text-transform: uppercase !important;
+      font-size: 0.75rem !important;
+      letter-spacing: 0.05em !important;
+      border-bottom: 1px solid var(--rw-border) !important;
+    }
+
+    td {
+      border-bottom: 1px solid var(--rw-border) !important;
+      color: var(--rw-text-primary) !important;
+    }
+
+    tr:hover td {
+      background-color: var(--rw-surface-hover) !important;
+    }
+
+    /* ---- Links ---- */
+    a {
+      color: var(--rw-cyan) !important;
+      text-decoration: none !important;
+      transition: color 0.2s ease !important;
+    }
+
+    a:hover {
+      color: var(--rw-indigo) !important;
+    }
+
+    /* ---- Buttons ---- */
+    button, .btn, [role="button"] {
+      background-color: var(--rw-surface) !important;
+      color: var(--rw-text-primary) !important;
+      border: 1px solid var(--rw-border-default) !important;
+      border-radius: 8px !important;
+      font-weight: 500 !important;
+      transition: all 0.2s ease !important;
+    }
+
+    button:hover, .btn:hover, [role="button"]:hover {
+      background-color: var(--rw-surface-hover) !important;
+      border-color: var(--rw-border-default) !important;
+    }
+
+    button.active, .btn.active, [role="button"].active,
+    button[aria-selected="true"], [aria-selected="true"] {
+      background-color: var(--rw-indigo) !important;
+      border-color: var(--rw-indigo) !important;
+      color: white !important;
+    }
+
+    /* ---- Footer ---- */
+    footer {
+      background-color: var(--rw-bg) !important;
+      border-top: 1px solid var(--rw-border) !important;
+      color: var(--rw-text-tertiary) !important;
+    }
+
+    footer a {
+      color: var(--rw-text-tertiary) !important;
+    }
+
+    footer a:hover {
+      color: var(--rw-text-secondary) !important;
+    }
+
+    /* ---- Misc ---- */
+    code, pre {
+      font-family: 'Geist Mono', 'Fira Code', monospace !important;
+      background-color: #0D1012 !important;
+      border: 1px solid var(--rw-border) !important;
+      border-radius: 6px !important;
+      color: var(--rw-text-primary) !important;
+    }
+
+    /* Remove default Upptime branding emphasis */
+    .powered-by, [class*="powered"] {
+      opacity: 0.4 !important;
+      font-size: 0.7rem !important;
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Selection color */
+    ::selection {
+      background-color: rgba(99, 102, 241, 0.3);
+      color: var(--rw-text-primary);
+    }
+  metaTags:
+    - name: description
+      content: "Real-time service status and uptime monitoring for Redwipe — Relentless Offense™"
+    - name: theme-color
+      content: "#141619"
+    - name: og:title
+      content: "Redwipe Status"
+    - name: og:description
+      content: "Real-time service health monitoring for Redwipe cybersecurity platform"
+    - name: og:image
+      content: "https://raw.githubusercontent.com/redwipe/status/master/assets/redwipe-logo-dark.png"
